@@ -1,0 +1,7 @@
+E:\C#\48p\48p\bin\Debug\48p.exe.config
+E:\C#\48p\48p\bin\Debug\48p.exe
+E:\C#\48p\48p\bin\Debug\48p.pdb
+E:\C#\48p\48p\obj\Debug\48p.csprojAssemblyReference.cache
+E:\C#\48p\48p\obj\Debug\48p.csproj.CoreCompileInputs.cache
+E:\C#\48p\48p\obj\Debug\48p.exe
+E:\C#\48p\48p\obj\Debug\48p.pdb

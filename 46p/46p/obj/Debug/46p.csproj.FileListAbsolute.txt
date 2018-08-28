@@ -1,0 +1,7 @@
+E:\C#\46p\46p\bin\Debug\46p.exe.config
+E:\C#\46p\46p\bin\Debug\46p.exe
+E:\C#\46p\46p\bin\Debug\46p.pdb
+E:\C#\46p\46p\obj\Debug\46p.csprojAssemblyReference.cache
+E:\C#\46p\46p\obj\Debug\46p.csproj.CoreCompileInputs.cache
+E:\C#\46p\46p\obj\Debug\46p.exe
+E:\C#\46p\46p\obj\Debug\46p.pdb

@@ -1,0 +1,7 @@
+E:\C#\HeyYou\HeyYou\bin\Debug\HeyYou.exe.config
+E:\C#\HeyYou\HeyYou\bin\Debug\HeyYou.exe
+E:\C#\HeyYou\HeyYou\bin\Debug\HeyYou.pdb
+E:\C#\HeyYou\HeyYou\obj\Debug\HeyYou.csprojAssemblyReference.cache
+E:\C#\HeyYou\HeyYou\obj\Debug\HeyYou.csproj.CoreCompileInputs.cache
+E:\C#\HeyYou\HeyYou\obj\Debug\HeyYou.exe
+E:\C#\HeyYou\HeyYou\obj\Debug\HeyYou.pdb
