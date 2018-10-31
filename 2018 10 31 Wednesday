@@ -1,0 +1,26 @@
+using System;
+public class Base
+{
+    public delegate void  DelegateClass();
+   public DelegateClass Click = null;
+   public Base(){
+       Click = new DelegateClass(xxx);
+   }
+   public void OnClick()
+   {
+       if(Click != null)
+            Click();
+   }
+    public void xxx()
+    {
+        Console.WriteLine("클릭!");
+    }
+}
+class My
+{
+    public static void Main() //static이란 것은 객체를 만들지 않아도 호출 가능, 운영체제에서 호출
+    {
+        Base gildong=new Base();
+        gildong.OnClick();
+    }
+}
