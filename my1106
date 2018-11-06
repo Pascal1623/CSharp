@@ -1,0 +1,44 @@
+using System;
+class Base
+{
+    public delegate void DelegateClass(); //DelegateClass 델리게이트 형(type)
+    public DelegateClass Click = null;
+    public Base()
+    {
+        
+    }
+    
+    public virtual void OnClick()
+    {
+        if (Click != null)
+            Click();
+    }
+}
+
+class Derived : Base //gildong
+{
+    public Derived()
+    {
+        Click = new DelegateClass(xxx);
+    }
+    public void xxx()
+    {
+        Console.WriteLine("클릭!");
+    }
+    public override void OnClick()
+    {
+        Console.WriteLine("dafsdsfasfsdafasdasd");
+    }
+}
+
+class My
+{
+    static void Main(string[] args)
+    {
+        Derived gildong = new Derived();
+        gildong.OnClick();
+    }
+}
+
+/*OnClick 함수를 만들어서 델리게이트가 실행되도록 하여야 한다. 델리리게이트가 있는 이유는 응용 프레임워크에서
+아직 존재하지 않는 핸들러 함수를 호출하도록 호출하기 하기 위해서이다.*/
