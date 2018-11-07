@@ -1,0 +1,51 @@
+using System;
+using System.Windows.Forms;
+class Form //gildong
+{
+    public delegate void EventHandler();
+    public EventHandler Click = null;
+    public Form()
+    {
+        
+    }
+
+    public void xxx()
+    {
+        Console.WriteLine("클릭!");
+    }
+
+    public void OnClick()
+    {
+        if (Click != null)
+            Click();
+    }
+}
+
+class Derived : Form
+{
+    public Derived()
+    {
+        Click += new EventHandler(xxx);
+    }
+    public void xxx()
+    {
+        Console.WriteLine("클릭!");
+    }
+    public override void OnClick()
+    {
+        Console.WriteLine("안녕하세요!!");
+    }
+}
+
+class My
+{
+    public static void Main()
+    {
+        Derived gildong = new Derived();
+        gildong.OnClick();
+    }
+}
+
+//정의는 만든다 선언은 알린다.
+//상속받는 클래스에서 호출이 가능한 것이 protected
+//무한대기 상태란?
