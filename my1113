@@ -1,0 +1,52 @@
+using System;
+
+public class Form
+{
+    public delegate void EventHandler();
+    public EventHandler Click = null;
+    
+    public virtual void OnClick()
+    {
+        if (Click != null)
+            Click();
+    }
+}
+class Derived : Form
+{
+    public Derived()
+    {
+        Click += new EventHandler(xxx);
+    }
+    public void xxx()
+    {
+        Console.WriteLine("클릭!");
+    }
+    public override void OnClick()
+    {
+        Console.WriteLine("==========");
+        base.OnClick();
+        Console.WriteLine("==========");
+    }
+}
+public class Application
+{
+    public static void Run(Form gildong)
+    {
+        gildong.OnClick();
+    }
+}
+public class My
+{
+    public static void Main()
+    {
+        Application.Run(new Derived());
+    }
+}
+//이전에는 xxx멤버 함수를 호출
+//이제는 Click으로 xxx 대신 사용(호출)
+//만일 이렇게 하더라도 오류가 없다면
+//Click은 xxx멤버 함수의 델리게이트라고 함
+//Click : 델리게이트, 델리게이트 객체, 델리게이트 인스턴스, 이벤트
+//DelegateClass : 델리게이트 형(type)
+//xxx : 핸들러 함수
+//OnClick : 이벤트 Click을 fire하는 가상함수
