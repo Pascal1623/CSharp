@@ -1,0 +1,28 @@
+using System;
+using System.Windows.Forms;
+class Mainform : Form
+{
+    public void InitializeComponent()
+    {
+        Click += new EventHandler(xxx);
+    }
+    public Mainform()
+    {
+        InitializeComponent();
+    }
+    public void xxx(object o, EventArgs e) //protected는 상속받는 곳에서 호출하는 것이다.
+    {
+        Console.WriteLine("Click!");
+    }
+}
+class my
+{
+    public static void Main()
+    {
+        //Console.WriteLine("Click!"); //가장 간단한 Form 프로그램 만들기 - 시험문제
+        Mainform gildong = new Mainform();
+        Application.Run(gildong);
+    }
+}
+
+//english listening, 코어 소리 영어
